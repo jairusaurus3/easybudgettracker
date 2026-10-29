@@ -48,22 +48,6 @@ sitemap.xml, robots.txt     SEO files
 google58aa16da169b3680.html Google Search Console verification
 ```
 
-## Run locally
-
-Because of the service worker and Google sign-in, serve the folder over `http://localhost` instead of opening the file directly:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080`. Google sign-in only works on origins registered in the app's Google Cloud OAuth client.
-
-## Deploying updates
-
-1. Replace the files in this repo with the new version, as individual files and not a zip.
-2. Commit and push. Netlify redeploys automatically.
-3. When you change cached files, bump the `CACHE` name in `sw.js` (for example `ebt-v9-9`) so users get the new version.
-
 ## Contact
 
 Questions or feedback: see the contact email on the [Terms](https://ezbudgettracker.app/terms.html) page.
